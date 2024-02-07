@@ -5,6 +5,7 @@ require([
     "dojo/domReady!"
 ], function(WebScene, SceneView, Legend) { // Add Legend to the function parameters
 
+
     var scene = new WebScene({
         portalItem: {
             id: "17ce5d59ad754cb79c3fa8f6512e8db8"
