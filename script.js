@@ -1,9 +1,9 @@
 require([
     "esri/WebScene",
     "esri/views/SceneView",
-    "dojo/domReady!",
-  "esri/widgets/Legend"
-], function(WebScene, SceneView, Legend) {
+    "esri/widgets/Legend", // Make sure to include the Legend module here
+    "dojo/domReady!"
+], function(WebScene, SceneView, Legend) { // Include Legend in the function parameters
 
     var scene = new WebScene({
         portalItem: {
@@ -18,7 +18,7 @@ require([
     });
   
     var legend = new Legend({
-    view: view
-  });
-  view.ui.add(legend, "bottom-right");
+        view: view
+    });
+    view.ui.add(legend, "bottom-right");
 });
