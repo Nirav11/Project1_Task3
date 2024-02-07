@@ -1,9 +1,9 @@
 require([
     "esri/WebScene",
     "esri/views/SceneView",
-    "esri/widgets/Legend", // Ensure Legend is imported here
+    "esri/widgets/Legend", // Importing Legend
     "dojo/domReady!"
-], function(WebScene, SceneView, Legend) { // Add Legend to the function parameters
+], function(WebScene, SceneView, Legend) { // Adding WebScene, SceneViewLegend and Legend to the function parameters
 
 
     var scene = new WebScene({
@@ -19,7 +19,7 @@ require([
     });
 
     view.when(function() {
-        // This ensures the view is fully loaded before adding the legend
+        // Fully loading the view and then adding the legend
         var legend = new Legend({
             view: view
         });
