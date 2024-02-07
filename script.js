@@ -1,7 +1,8 @@
 require([
     "esri/WebScene",
     "esri/views/SceneView",
-    "dojo/domReady!"
+    "dojo/domReady!",
+  "esri/widgets/Legend"
 ], function(WebScene, SceneView) {
 
     var scene = new WebScene({
@@ -15,5 +16,9 @@ require([
         map: scene,
         viewingMode: 'global'
     });
-
+  
+    var legend = new Legend({
+    view: view
+  });
+  view.ui.add(legend, "bottom-right");
 });
