@@ -3,7 +3,7 @@ require([
     "esri/views/SceneView",
     "dojo/domReady!",
   "esri/widgets/Legend"
-], function(WebScene, SceneView) {
+], function(WebScene, SceneView, Legend) {
 
     var scene = new WebScene({
         portalItem: {
