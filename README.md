@@ -1,5 +1,4 @@
-# Esri WebScene with SceneView and Legend Integration
-
+# Esri WebScene with SceneView
 This project demonstrates how to integrate an Esri WebScene into a web application using the ArcGIS API for JavaScript. It includes the setup for displaying a 3D WebScene using SceneView and adding a Legend widget to the application. The Legend widget displays symbols and labels representing the layers within the WebScene.
 
 ## Features
